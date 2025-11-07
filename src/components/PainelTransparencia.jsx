@@ -35,6 +35,9 @@ import {
 } from 'recharts'
 import { politicos, promessas, orcamento, evolucaoGastos, kpis } from '../data/mockData'
 import logoMove from '../assets/logo-move.png'
+import '../assets/tool-svg.svg'
+import toolImg from '../assets/tool.png'
+
 
 export function PainelTransparencia({ onNavigateToHome }) {
   const [activeTab, setActiveTab] = useState('dashboard')
@@ -89,6 +92,10 @@ export function PainelTransparencia({ onNavigateToHome }) {
                 </h1>
                 <p className="text-sm text-gray-600">Acompanhe o cumprimento das promessas políticas</p>
               </div>
+            </div>
+            <div className='flex items-center gap-2'>
+              <img className='tool-img' src={toolImg} alt="" />
+              <h1 className='dados-ficticios'>Dados Fictícios</h1>
             </div>
             <Button 
               variant="outline" 

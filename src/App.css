@@ -41,6 +41,16 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+.dados-ficticios {
+  opacity: 0.8;
+  fontStyle: italic;
+  color: rgb(0, 0, 0);
+}
+
+.tool-img{
+  width: 2em;
+  height: 2em;
+}
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
