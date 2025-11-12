@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Segurança: força upgrade de HTTP para HTTPS e bloqueia mixed content -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; font-src 'self' https: data:; style-src 'self' 'unsafe-inline' https:; script-src 'self' https:; connect-src 'self' https: wss:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; upgrade-insecure-requests;" />
+  <!-- Segurança: CSP fortalecida para evitar conteúdo misto e limitar origens -->
+  <!-- Observação: 'unsafe-inline' em style-src mantém estilos inline necessários (ex.: atributos style). Remover exige refatorar estilos inline. -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; font-src 'self' https: data:; style-src 'self' 'unsafe-inline' https:; script-src 'self' https:; connect-src 'self' https: wss:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; upgrade-insecure-requests; block-all-mixed-content;" />
     <meta name="referrer" content="strict-origin-when-cross-origin" />
     <title>Move Congonhas - Transformando nossa cidade juntos!</title>
   </head>
