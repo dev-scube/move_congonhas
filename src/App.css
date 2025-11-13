@@ -43,10 +43,50 @@
 
 .dados-ficticios {
   opacity: 0.8;
-  fontStyle: italic;
   color: rgb(0, 0, 0);
 }
 
+.texto-contato {
+  color: #333333;
+  font-size: 1.08em;
+  text-decoration: none;
+}
+.texto-contato:hover {
+  color: #000000;
+  font-size: 1.08em;
+  font-weight: bold;
+  
+}
+
+.link-destaque {
+  color: #2B7A9B;
+  text-decoration: none;
+}
+.link-destaque:hover {
+  color: #3e7bca;
+  font-weight: none;
+}
+
+.itens-scube{
+  gap: 0.4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.scube-logo,
+.scube-logo svg,
+.scube-logo * {
+  fill: #ffffff !important;
+  stroke: #ffffff !important;
+  color: #ffffff !important;
+}
+
+/* Se o SVG for inserido via <img src="..."> */
+img.scube-logo {
+  filter: brightness(0) invert(1);
+}
 .tool-img{
   width: 2em;
   height: 2em;

@@ -11,9 +11,9 @@ function App() {
       {currentPage === 'home' && (
         <LandingPage onNavigateToPainel={() => setCurrentPage('painel')} />
       )}
-      {currentPage === 'painel' && (
+      {/* {currentPage === 'painel' && (
         <PainelTransparencia onNavigateToHome={() => setCurrentPage('home')} />
-      )}
+      )} */}
     </>
   )
 }

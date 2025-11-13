@@ -2,6 +2,7 @@ import { ArrowRight, Heart, Users, Lightbulb, MessageCircle, Leaf, History, Spar
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import logoMove from '../assets/logo-move.png'
+import logoscube from '../assets/scube-logo.svg'
 
 export function LandingPage({ onNavigateToPainel }) {
   const scrollToSection = (id) => {
@@ -39,12 +40,12 @@ export function LandingPage({ onNavigateToPainel }) {
               <button onClick={() => scrollToSection('contato')} className="text-gray-700 hover:text-[#E8604C] transition-colors font-medium">
                 Contato
               </button>
-              <Button 
+              {/* <Button 
                 onClick={onNavigateToPainel}
                 className="bg-[#E8604C] hover:bg-[#d55440] text-white"
               >
                 Painel de Transparência
-              </Button>
+              </Button> */}
             </div>
           </div>
         </nav>
@@ -85,14 +86,14 @@ export function LandingPage({ onNavigateToPainel }) {
               >
                 Conheça o Movimento
               </Button>
-              <Button 
+              {/* <Button 
                 size="lg" 
                 className="bg-[#E8604C] hover:bg-[#d55440] text-white text-lg px-8 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all"
                 onClick={onNavigateToPainel}
               >
                 Acessar Painel de Transparência (Protótipo)
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
+              </Button> */}
             </div>
           </div>
         </div>
@@ -275,14 +276,14 @@ export function LandingPage({ onNavigateToPainel }) {
           </div>
 
           <div className="text-center py-12">
-            <p className="text-gray-600 mb-6">Em breve, publicaremos conteúdos sobre os temas que movem nossa cidade.</p>
-            <Button 
+            <p className="text-gray-600 text-lg mb-6">Em breve, publicaremos conteúdos sobre os temas que movem nossa cidade.</p>
+            {/* <Button 
               onClick={onNavigateToPainel}
               className="bg-[#E8604C] hover:bg-[#d55440] text-white"
             >
               Enquanto isso, conheça nosso Painel de Transparência
               <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            </Button> */}
           </div>
         </div>
       </section>
@@ -296,14 +297,14 @@ export function LandingPage({ onNavigateToPainel }) {
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Junte-se a nós na construção de uma Congonhas mais justa, inovadora e conectada
           </p>
-          <Button 
+          {/* <Button 
             size="lg" 
             className="bg-[#F4C542] hover:bg-[#e5b63a] text-[#1E3A5F] text-lg px-8 py-6 rounded-full shadow-xl hover:shadow-2xl transition-all font-bold"
             onClick={onNavigateToPainel}
           >
             Conheça o Painel de Transparência
             <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
+          </Button> */}
         </div>
       </section>
 
@@ -320,14 +321,15 @@ export function LandingPage({ onNavigateToPainel }) {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1  md:grid-cols-3 gap-8">
               <Card className="text-center hover:shadow-xl transition-all duration-300">
-                <CardContent className="pt-8">
-                  <div className="w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto" style={{ backgroundColor: 'var(--move-verde)' }}>
+                <CardContent className="pt-8 pb-8">
+                  <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto" style={{ backgroundColor: 'var(--move-verde)' }}>
                     <Phone className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="font-bold text-lg mb-2">Telefone</h3>
-                  <a href="tel:+5531996637708" className="text-gray-600 hover:text-[#2B7A9B] transition-colors">
+                  <h3 className="font-bold text-xl mb-4">Telefone</h3>
+                  {/* <a href="tel:+5531996637708" className=" text-gray-600 hover:text-[#2B7A9B] transition-colors"> */}
+                  <a href="tel:+5531996637708" className="texto-contato mt-2">
                     (31) 99663-7708
                   </a>
                 </CardContent>
@@ -338,8 +340,8 @@ export function LandingPage({ onNavigateToPainel }) {
                   <div className="w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto" style={{ backgroundColor: 'var(--move-vermelho)' }}>
                     <Mail className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="font-bold text-lg mb-2">Email</h3>
-                  <a href="mailto:movcongonhas@gmail.com" className="text-gray-600 hover:text-[#2B7A9B] transition-colors">
+                  <h3 className="font-bold text-xl mb-2">Email</h3>
+                  <a href="mailto:movcongonhas@gmail.com" className="texto-contato mt-2">
                     movcongonhas@gmail.com
                   </a>
                 </CardContent>
@@ -350,12 +352,12 @@ export function LandingPage({ onNavigateToPainel }) {
                   <div className="w-16 h-16 rounded-full flex items-center justify-center mb-4 mx-auto" style={{ backgroundColor: 'var(--move-amarelo)' }}>
                     <Instagram className="w-8 h-8 text-white" />
                   </div>
-                  <h3 className="font-bold text-lg mb-2">Instagram</h3>
+                  <h3 className="font-bold text-xl mb-2">Instagram</h3>
                   <a 
                     href="https://instagram.com/move.congonhas" 
                     target="_blank" 
                     rel="noopener noreferrer"
-                    className="text-gray-600 hover:text-[#2B7A9B] transition-colors"
+                    className="texto-contato mt-2"
                   >
                     @move.congonhas
                   </a>
@@ -376,6 +378,36 @@ export function LandingPage({ onNavigateToPainel }) {
             <h3 className="text-2xl font-bold mb-2">Move Congonhas</h3>
             <p className="text-gray-400 mb-6">Transformando nossa cidade juntos!</p>
             <p className="text-sm text-gray-500">© 2025 Move Congonhas. Todos os direitos reservados.</p>
+          </div>
+          <div className="itens-scube mt-6 flex items-center justify-center gap-4">
+            <div>
+            <p className="text-gray-500 text-sm">
+              Desenvolvido e apresentado por
+              <a
+                className="link-destaque ml-2"
+                href="https://scube.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>s-cube</span>
+              </a>
+            </p>
+            </div>
+            <div>
+              <a
+                href="https://scube.com.br"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visitar s-cube"
+                className="inline-block focus:outline-none  rounded"
+              >
+                <img
+                  src={logoscube}
+                  alt="s-cube logo"
+                  className="h-10 scube-logo transform transition-transform duration-300 ease-out hover:scale-110 hover:-translate-y-1 cursor-pointer"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </footer>
